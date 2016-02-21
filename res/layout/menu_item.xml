@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#D8D4D4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dish_name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/dish_descr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dish_descr"
+        android:textColor="@android:color/black" />    
+	
+	<LinearLayout
+    	android:background="#D8D4D4"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="horizontal" >
+
+	    <TextView
+    	    android:id="@+id/dollar_sign"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+    	    android:text="$"
+        	android:textColor="@android:color/black" />	    
+	    	    
+	    <TextView
+    	    android:id="@+id/dish_price"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+    	    android:text="@string/dish_price"
+        	android:textColor="@android:color/black" /> 
+        	
+	    </LinearLayout>
+
+</LinearLayout>

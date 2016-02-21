@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical" >
+    
+    
+    <ImageView
+        android:id="@+id/headerbg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/universal_background" 
+        android:adjustViewBounds="true" />    
+    
+    <ImageView
+        android:id="@+id/headertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hamburgerButton"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop ="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/desc"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/settings_text" />
+
+     <ImageButton
+        android:id="@+id/hamburgerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/headerbg"
+        android:layout_toLeftOf="@+id/headertext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="9dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/hamburger"
+        android:contentDescription="@string/desc"
+        android:minHeight="0dp"
+        android:minWidth="0dp" />
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/headerbg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="7dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/add"
+        android:contentDescription="@string/desc"
+        android:minHeight="0dp"
+        android:minWidth="0dp" />
+    
+
+    
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D4D4"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <ImageView
+        android:id="@+id/topHeaderBuffer_rest"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.02"
+        android:background="@drawable/universal_background"
+        android:contentDescription="@string/desc" />
+
+    <RelativeLayout
+        android:id="@+id/Header_rest"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.04"
+        android:background="@drawable/universal_background" >
+
+        <ImageButton
+            android:id="@+id/hamburger_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/headerText_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/header_restauranttext" />
+
+        <ImageButton
+            android:id="@+id/add_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottomHeaderBuffer_rest"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.02"
+        android:background="@drawable/universal_background"
+        android:contentDescription="@string/desc" >
+    </ImageView>
+
+    <!-- Space being reserved for the map -->
+
+    <ImageView
+        android:id="@+id/spaceForMap_rest"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.25"
+        android:background="@null"
+        android:contentDescription="@string/desc" />
+
+    <LinearLayout
+        android:id="@+id/restOfPage_rest"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.67"
+        android:background="@null"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <include
+            android:id="@+id/restaurantLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            layout="@layout/label" />
+
+        <RelativeLayout
+            android:id="@+id/searchArea_rest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@null" >
+
+            <ImageView
+                android:id="@+id/searchIcon_rest"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/desc"
+                android:scaleType="fitStart"
+                android:src="@drawable/searchicon" />
+
+            <AutoCompleteTextView
+                android:id="@+id/searchMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/searchIcon_rest"
+                android:background="@null"
+                android:ems="10"
+                android:textColor="#000000"
+                android:hint="@string/searchMenu" >
+            </AutoCompleteTextView>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/dishesList"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.98"
+            tools:listitem="@layout/menu_item"
+            android:isScrollContainer="false" />
+
+        <ImageView
+            android:id="@+id/addButtonTopBuffer"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.01"
+            android:background="@null"
+            android:contentDescription="@string/desc" />
+
+        <ImageButton
+            android:id="@+id/addDishButton"
+            android:layout_width="106dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/searchbutton"
+            android:contentDescription="@string/desc" />
+
+        <ImageView
+            android:id="@+id/addButtonBottomBuffer"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.01"
+            android:background="@null"
+            android:contentDescription="@string/desc" />
+    </LinearLayout>
+
+</LinearLayout>

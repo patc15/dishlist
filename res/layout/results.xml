@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:weightSum="1.0" >
+
+    <ImageView
+        android:id="@+id/topHeaderBuffer_results"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.02"
+        android:background="@drawable/universal_background"
+        android:contentDescription="@string/desc" />
+
+    <RelativeLayout
+        android:id="@+id/Header_results"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.04"
+        android:background="@drawable/universal_background" >
+
+        <ImageButton
+            android:id="@+id/hamburger_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/headerText_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/header_resulttext" />
+
+        <ImageButton
+            android:id="@+id/add_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottomHeaderbuffer_results"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.02"
+        android:background="@drawable/universal_background"
+        android:contentDescription="@string/desc" />
+    
+    <LinearLayout
+        android:id="@+id/Tabs_results"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.1" >
+        
+		<LinearLayout
+		    android:id="@+id/InnerTabs_results"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+
+			<ImageView
+			    android:id="@+id/left_list_tab"
+			    android:layout_width="0dip"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:background="@null"
+			    android:scaleType="fitEnd"
+			    android:src="@drawable/left_list_tab_filled"
+			    android:contentDescription="@string/desc" />
+
+			<ImageView
+			    android:id="@+id/right_map_tab"
+			    android:layout_width="0dip"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:background="@null"
+			    android:scaleType="fitStart"
+			    android:src="@drawable/right_map_tab_empty"
+			    android:contentDescription="@string/desc" />
+		</LinearLayout>
+    </LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/ResultsLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="0.82" >
+
+	  	<RelativeLayout
+	  	    android:id="@+id/InnerResultsLayout"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="match_parent"
+	  	    android:orientation="vertical" >
+	
+		 	<ListView
+		        android:id="@+id/searchResults"
+		        android:background="#D8D4D4"
+		        android:layout_width="fill_parent"
+		        android:layout_height="match_parent"
+		        android:layout_alignParentLeft="true"
+		        android:scrollbars="vertical"
+		        android:divider="@null"
+		        android:dividerHeight="0dp"
+		        android:listSelector="@android:color/transparent"
+		        android:isScrollContainer="false" />
+	  	</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

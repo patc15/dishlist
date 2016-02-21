@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="1.0" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.6" >
+
+            <ImageView
+                android:id="@+id/label_white_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/label_white_background" />
+
+            <com.example.savethatdish.SquareImageView
+                android:id="@+id/label_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/label_white_background"
+                android:layout_alignLeft="@+id/label_white_background"
+                android:layout_alignTop="@+id/label_white_background"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:contentDescription="@string/desc"
+                android:scaleType="fitXY"
+                android:src="@null" />
+
+            <com.example.savethatdish.SquareImageView
+                android:id="@+id/label_logo_outline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/label_logo"
+                android:layout_alignLeft="@+id/label_logo"
+                android:layout_alignRight="@+id/label_logo"
+                android:layout_alignTop="@+id/label_logo"
+                android:contentDescription="@string/desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/label_logo_outline" />
+
+            <TextView
+                android:id="@+id/label_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/label_logo"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/label_star"
+                android:layout_toRightOf="@+id/label_logo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#4f4f4f" />
+
+            <TextView
+                android:id="@+id/label_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/label_logo"
+                android:layout_alignLeft="@+id/label_name"
+                android:layout_alignRight="@+id/label_name"
+                android:layout_below="@+id/label_name"
+                android:layout_toLeftOf="@+id/label_star"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#4f4f4f" />
+
+            <ImageButton
+                android:id="@+id/label_star"
+                android:clickable="true"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:contentDescription="@string/desc"
+                android:scaleType="fitEnd"
+                android:src="@drawable/label_empty_star" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.4"
+            android:scaleType="fitXY"
+            android:orientation="horizontal" >
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+		        <ImageView
+		            android:id="@+id/label_grey_background"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:contentDescription="@string/desc"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/label_grey_background" />
+
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent" >
+					<LinearLayout
+					    android:layout_width="0dip"
+					    android:layout_height="match_parent"
+					    android:layout_weight="1" >
+
+					    <RelativeLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:gravity="center" >
+
+					        <TextView
+					            android:id="@+id/rating_value"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:layout_alignParentTop="true"
+					            android:layout_centerHorizontal="true"
+					            android:textSize="6pt"
+					            android:textColor="#898989" />
+
+					        <TextView
+					            android:id="@+id/reviews_value"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:layout_below="@+id/rating_value"
+					            android:layout_centerHorizontal="true"
+					            android:textColor="#898989"
+					            android:textSize="4pt" />
+
+					    </RelativeLayout>
+
+						</LinearLayout>
+					<LinearLayout
+					    android:layout_width="0dip"
+					    android:layout_height="match_parent"
+					    android:layout_weight="1" >
+
+						<RelativeLayout
+						    android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:gravity="center" >
+
+							<ImageView
+							    android:id="@+id/label_friend"
+							    android:layout_width="match_parent"
+							    android:layout_height="match_parent"
+							    android:layout_marginBottom="7dp"
+							    android:layout_marginTop="7dp"
+							    android:contentDescription="@string/desc"
+							    android:scaleType="fitCenter"
+							    android:src="@drawable/label_friend" />
+
+							<ImageView
+							    android:id="@+id/blank_image2"
+							    android:layout_width="40dp"
+							    android:layout_height="wrap_content"
+							    android:layout_centerHorizontal="true"
+							    android:layout_centerVertical="true"
+							    android:contentDescription="@string/desc"
+							    android:src="@null" />
+
+						    <TextView
+						        android:id="@+id/friends_value"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_alignRight="@+id/blank_image2"
+						        android:layout_centerVertical="true"
+						        android:textColor="#898989"
+						        android:textSize="7pt" />
+
+						</RelativeLayout>
+						</LinearLayout>
+					<LinearLayout
+					    android:layout_width="0dip"
+					    android:layout_height="match_parent"
+					    android:layout_weight="1" >
+
+						<RelativeLayout
+						    android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:gravity="center" >
+
+						    <ImageView
+						        android:id="@+id/label_distance"
+						        android:layout_width="match_parent"
+						        android:layout_height="match_parent"
+						        android:layout_marginBottom="7dp"
+						        android:layout_marginTop="7dp"
+						        android:contentDescription="@string/desc"
+						        android:scaleType="fitCenter"
+						        android:src="@drawable/label_distance" />
+
+						    <ImageView
+						        android:id="@+id/blank_image"
+						        android:layout_width="50dp"
+						        android:layout_height="wrap_content"
+						        android:layout_centerHorizontal="true"
+						        android:layout_centerVertical="true"
+						        android:contentDescription="@string/desc"
+						        android:src="@null" />
+
+						    <TextView
+						        android:id="@+id/distance_value"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_alignRight="@+id/blank_image"
+						        android:layout_centerVertical="true"
+						        android:textColor="#898989"
+						        android:textSize="7pt" />
+
+						</RelativeLayout>
+
+						</LinearLayout>
+					</LinearLayout>
+			</RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

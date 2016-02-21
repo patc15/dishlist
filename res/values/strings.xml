@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SaveThatDish</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">311859808965504</string>
+    
+    
+    <string name="get_started">Start saving your dish! Log in using Facebook</string>
+    <string name="settings">Settings</string>
+    <string name="desc">Filler</string>
+    <string name="searchtext">search your dishList</string>
+    
+    <string name="label">Individual restaurant labels</string>
+    <string name="address">1234 Sample St, San Diego, CA 92122</string>
+    <string name="name">Starbucks</string>
+    <string name="num_friends">5</string>
+    <string name="num_miles">4.5</string>
+    <string name="num_reviews">8</string>
+    <string name="rating">4</string>
+    
+    <string name="keywordHint">What are you craving?</string>
+    <string name="searchMenu">search the menu</string>
+    <string name="locationHint">Where are you?</string>
+    
+    <string name="dish_name">Dish</string>
+    <string name="dish_descr">Details about the dish</string>
+    <string name="dish_price">price</string>
+    
+    <string name="profile_name">Winnie</string>
+    <string name="dishes_added">5 Restaurants Added</string>
+    <string name="dishes_forked">5 Dishes Forked</string>
+    <string name="dishes_rated_title">DISHES RATED</string>
+    <string name="dishes_followers_title">FOLLOWERS</string>
+    <string name="dishes_following_title">FOLLOWING</string>
+    
+    <string name="profile_DishList">DishList</string>
+    <string name="profile_History">History</string>
+    <string name="profile_Settings">Settings</string>
+    
+</resources>

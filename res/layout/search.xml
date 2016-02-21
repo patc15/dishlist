@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <ImageView
+        android:id="@+id/topHeaderBuffer_dishlist"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.02"
+        android:background="@drawable/universal_background"
+        android:contentDescription="@string/desc" />
+
+    <RelativeLayout
+        android:id="@+id/Header_rest"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.04"
+        android:background="@drawable/universal_background" >
+
+        <ImageButton
+            android:id="@+id/hamburger_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/searchHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/searchtext" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottomHeaderBuffer_rest"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.02"
+        android:background="@drawable/universal_background"
+        android:contentDescription="@string/desc" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip" 
+	    android:layout_weight="0.92">
+	
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	
+	        <ImageButton
+	            android:id="@+id/searchButton"
+	            android:layout_width="106dip"
+	            android:layout_height="50dip"
+	            android:layout_below="@+id/editTextSearchLocation"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="18dp"
+	            android:background="@drawable/searchbutton"
+	            android:contentDescription="@string/desc" />
+	
+	        <EditText
+	            android:id="@+id/editTextSearchKeyword"
+	            android:layout_width="250dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/editTextSearchLocation"
+	            android:layout_alignLeft="@+id/editTextSearchLocation"
+	            android:layout_marginBottom="38dp"
+	            android:background="@null"
+	            android:drawableBottom="@drawable/searchdivider"
+	            android:drawableLeft="@drawable/search"
+	            android:ems="10"
+	            android:hint="@string/keywordHint"
+	            android:inputType="none"
+	            android:textColor="#FFFFFF" />
+	
+	        <EditText
+	            android:id="@+id/editTextSearchLocation"
+	            android:layout_width="250dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="183dp"
+	            android:background="@null"
+	            android:drawableBottom="@drawable/searchdivider"
+	            android:drawableLeft="@drawable/pointer"
+	            android:ems="10"
+	            android:hint="@string/locationHint"
+	            android:inputType="none"
+	            android:textColor="#FFFFFF" />
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

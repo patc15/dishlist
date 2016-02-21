@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#D8D4D4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.66"
+		android:background="@null" 
+		>
+		<ImageView
+	        android:id="@+id/backgroundpic"
+	        android:contentDescription="@string/desc"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:adjustViewBounds="true"
+	        android:background="@drawable/coverphoto"
+	        android:cropToPadding="true"
+	        android:scaleType="center"
+	        android:src="@drawable/coverphoto_overlay">
+        
+        </ImageView>
+    
+    
+    	<LinearLayout
+    	    android:id="@+id/bg"  
+    	    android:contentDescription="@string/desc"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:background="@null"
+    	    android:weightSum="1.0"
+    	    android:orientation="vertical"
+    	    >
+    	    
+    	    <ImageView
+		        android:id="@+id/topHeaderBuffer_dishlist"
+		        android:layout_width="fill_parent"
+		        android:layout_height="0dip"
+		        android:layout_weight="0.0266"
+		        android:contentDescription="@string/desc"
+		        android:background="@drawable/topperfull"
+        	/>
+    	    
+    	      <RelativeLayout
+			        android:id="@+id/Header_rest"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0dip"
+			        android:layout_weight="0.0534"
+			        android:background="@drawable/universal_background" >
+
+			        <ImageButton
+			            android:id="@+id/hamburger_rest"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginLeft="8dp"
+			            android:scaleType="fitCenter"
+			            android:adjustViewBounds="true"
+			            android:contentDescription="@string/desc"
+			            android:src="@drawable/hamburger"
+			            android:background="@null"
+			            android:minHeight="0dp"
+			            android:minWidth="0dp" 
+			            android:padding="0dp"/>
+			
+			        
+			        <ImageView
+			            android:id="@+id/headerText_rest"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerHorizontal="true"
+			            android:layout_centerVertical="true"
+			            android:contentDescription="@string/desc"
+			            android:src="@drawable/profiletext" />
+			
+			        <ImageButton
+			            android:id="@+id/add_rest"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="8dp"
+						android:scaleType="fitCenter" 
+			            android:adjustViewBounds="true"
+			            android:contentDescription="@string/desc"
+			            android:background="@null"
+			            android:src="@drawable/add"
+			            android:minHeight="0dp"
+			            android:minWidth="0dp"
+			            android:padding="0dp"
+			            />
+					
+			    </RelativeLayout>
+			
+			    <ImageView
+			        android:id="@+id/bottomHeaderBuffer_rest"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0dip"
+			        android:layout_weight="0.0266"
+			        android:contentDescription="@string/desc"
+			        android:background="@drawable/universal_background"
+			        >
+			
+			    </ImageView>
+			    
+			    <ImageView
+			        android:id="@+id/BlankSpaceAbovePic"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0dip"
+			        android:layout_weight="0.08"
+			        android:contentDescription="@string/desc"
+			        android:background="@null"
+			        />
+				
+
+				<RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="0.30"
+			        android:layout_gravity="center_horizontal"
+			        android:background="@null"
+			        >
+
+					<ImageView
+					    android:id="@+id/imageView2"
+					    android:contentDescription="@string/desc"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_alignRight="@+id/imageView3"
+					    android:layout_centerVertical="true"
+					    android:adjustViewBounds="true"
+					    android:src="@drawable/profile_picborder" />
+
+					<ImageView
+					    android:contentDescription="@string/desc"
+					    android:id="@+id/imageView3"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginRight="0dp"
+					    android:layout_centerHorizontal="true"
+					    android:layout_centerVertical="true"
+					    android:adjustViewBounds="true"
+					    android:src="@drawable/profile_defaultpic" />
+
+				    </RelativeLayout>
+			    
+			    <ImageView
+			        android:id="@+id/BlankSpaceBelowPic"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0dip"
+			        android:layout_weight="0.06"
+			        android:contentDescription="@string/desc"
+			        android:background="@null"
+			        />
+			
+			    <TextView
+			        android:id="@+id/textView1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="0dp"
+			        android:layout_weight="0.05"
+			        android:layout_gravity="center_horizontal"
+			        android:text="@string/profile_name"
+			        android:textColor="#fff" />
+			    	    
+			    <TextView
+			        android:id="@+id/textView2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="0dp"
+			        android:layout_weight="0.05"
+			        android:layout_gravity="center_horizontal"
+			        android:textColor="#fff"
+			        android:text="@string/dishes_added" />
+			    
+			    <TextView
+			        android:id="@+id/textView3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="0dp"
+			        android:layout_gravity="center_horizontal"
+			        android:layout_weight="0.05"
+			        android:textColor="#fff"
+			        android:text="@string/dishes_forked" />
+			    
+				<ImageView
+			        android:id="@+id/BlankSpaceBelowText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0dip"
+			        android:layout_weight="0.12"
+			        android:contentDescription="@string/desc"
+			        android:background="@null"
+			        />
+			        	    
+			    </LinearLayout>
+		</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.111"
+        android:background="@null"
+        >
+	    <ImageButton
+	        android:contentDescription="@string/desc"
+	        android:id="@+id/historyButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:src="#D8D4D4" 
+	        android:background="@null"
+	        />
+
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@null"
+	        android:weightSum="1.0"
+	        android:orientation="vertical"
+	        >
+			<ImageView
+			    android:contentDescription="@string/desc"
+			    android:id="@+id/BlankSpaceAboveButton"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:src="@null"
+			    android:layout_weight="0.2"
+			/>
+			    
+	    	<LinearLayout 
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="0dp"
+	    	    android:layout_weight="0.6"
+	    	    android:orientation="horizontal"
+	    	    >
+				<ImageView 
+				    android:contentDescription="@string/desc"
+				    android:id="@+id/BlankSpace"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:src="@null"
+				    android:layout_weight="0.06"
+				    />
+			    <ImageView
+			        android:contentDescription="@string/desc"
+			        android:id="@+id/imageView1"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.08"
+			        android:layout_gravity="center_vertical"
+			        android:src="@drawable/write_icon" />
+			    <ImageView 
+				    android:contentDescription="@string/desc"
+				    android:id="@+id/BlankSpace2"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:src="@null"
+				    android:layout_weight="0.08"
+				    />
+			    
+			    <TextView
+			        android:id="@+id/profileDishList"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/profile_DishList"
+			        android:layout_weight="0.3"
+			        android:layout_gravity="center_vertical"
+			        android:textColor="#000"
+			        android:textSize="20sp" />
+			    
+			    <ImageView 
+				    android:contentDescription="@string/desc"
+				    android:id="@+id/BlankSpace3"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:src="@null"
+				    android:layout_weight="0.30"
+				    />
+			    
+			    <ImageView
+			        android:id="@+id/arrow1"
+			        android:contentDescription="@string/desc"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.1"
+			        
+			        android:src="@drawable/profile_arrow" />
+			    </LinearLayout>
+			<ImageView
+			    android:contentDescription="@string/desc"
+			    android:id="@+id/BlankSpaceBelowButton"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:src="@null"
+			    android:layout_weight="0.2"
+			/>
+			    
+		    </LinearLayout>
+
+		
+    
+    </RelativeLayout>
+
+    <ImageView
+        android:contentDescription="@string/desc"
+        android:id="@+id/profile_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_divider" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.111"
+        android:background="@null"
+        >
+	    <ImageButton
+	        android:contentDescription="@string/desc"
+	        android:id="@+id/historyButton2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:src="#D8D4D4" 
+	        android:background="@null"
+	        />
+
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@null"
+	        android:weightSum="1.0"
+	        android:orientation="vertical"
+	        >
+			<ImageView
+			    android:contentDescription="@string/desc"
+			    android:id="@+id/Blank2SpaceAboveButton"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:src="@null"
+			    android:layout_weight="0.2"
+			/>
+			    
+	    	<LinearLayout 
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="0dp"
+	    	    android:layout_weight="0.6"
+	    	    android:orientation="horizontal"
+	    	    >
+				<ImageView 
+				    android:contentDescription="@string/desc"
+				    android:id="@+id/Blank1Space"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:src="@null"
+				    android:layout_weight="0.06"
+				    />
+			    <ImageView
+			        android:contentDescription="@string/desc"
+			        android:id="@+id/image1View1"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.08"
+			        android:layout_gravity="center_vertical"
+			        android:src="@drawable/copy_icon" />
+			    <ImageView 
+				    android:contentDescription="@string/desc"
+				    android:id="@+id/BlankSpace21"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:src="@null"
+				    android:layout_weight="0.08"
+				    />
+			    
+			    <TextView
+			        android:id="@+id/profileHistory"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/profile_History"
+			        android:layout_weight="0.3"
+			        android:layout_gravity="center_vertical"
+			        android:textColor="#000"
+			        android:textSize="20sp" />
+			    
+			    <ImageView 
+				    android:contentDescription="@string/desc"
+				    android:id="@+id/Blank2Space3"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:src="@null"
+				    android:layout_weight="0.30"
+				    />
+			    
+			    <ImageView
+			        android:id="@+id/arrow2"
+			        android:contentDescription="@string/desc"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.1"
+			        android:src="@drawable/profile_arrow" />
+			    </LinearLayout>
+
+	    	<ImageView
+	    	    android:id="@+id/BlankSpace3BelowButton"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="0dp"
+	    	    android:layout_weight="0.2"
+	    	    android:contentDescription="@string/desc"
+	    	    android:src="@null" />
+			    
+		    </LinearLayout>
+
+		
+    
+    </RelativeLayout>
+    
+    <ImageView
+        android:contentDescription="@string/desc"
+        android:id="@+id/profile_divider2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_divider"
+        />
+
+       <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.111"
+        android:background="@null"
+        >
+	    <ImageButton
+	        android:contentDescription="@string/desc"
+	        android:id="@+id/settingsButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:src="#D8D4D4" 
+	        android:background="@null"
+	        />
+
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@null"
+	        android:weightSum="1.0"
+	        android:orientation="vertical"
+	        >
+			<ImageView
+			    android:contentDescription="@string/desc"
+			    android:id="@+id/BlankSpaceAboveButton2"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:src="@null"
+			    android:layout_weight="0.2"
+			/>
+			    
+	    	<LinearLayout 
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="0dp"
+	    	    android:layout_weight="0.6"
+	    	    android:orientation="horizontal"
+	    	    >
+				<ImageView 
+				    android:contentDescription="@string/desc"
+				    android:id="@+id/Blank2Space"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:src="@null"
+				    android:layout_weight="0.06"
+				    />
+			    <ImageView
+			        android:contentDescription="@string/desc"
+			        android:id="@+id/settingsIcon"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.08"
+			        android:layout_gravity="center_vertical"
+			        android:src="@drawable/settings_icon" />
+			    <ImageView 
+				    android:contentDescription="@string/desc"
+				    android:id="@+id/Blank2Space2"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:src="@null"
+				    android:layout_weight="0.08"
+				    />
+			    
+			    <TextView
+			        android:id="@+id/profileSettings"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/profile_Settings"
+			        android:layout_weight="0.3"
+			        android:layout_gravity="center_vertical"
+			        android:textColor="#000"
+			        android:textSize="20sp" />
+			    
+			    <ImageView 
+				    android:contentDescription="@string/desc"
+				    android:id="@+id/BlankSpace4"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:src="@null"
+				    android:layout_weight="0.30"
+				    />
+			    
+			    <ImageView
+			        android:id="@+id/arrow3"
+			        android:contentDescription="@string/desc"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.1"
+			        android:src="@drawable/profile_arrow" />
+			    </LinearLayout>
+			    
+			<ImageView
+			    android:contentDescription="@string/desc"
+			    android:id="@+id/BlankSpaceBelow2Button"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:src="@null"
+			    android:layout_weight="0.2"
+			/>
+			    
+		</LinearLayout>
+
+		
+    
+    </RelativeLayout>
+    
+</LinearLayout>

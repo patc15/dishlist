@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#16AB99"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+    
+
+    <RelativeLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.125"
+        android:background="@null" >
+       <ImageView
+            android:id="@+id/searchBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+            android:layout_marginTop="20dp"
+	  	    android:gravity="center_vertical"    
+		    android:layout_centerVertical="true"     
+		    android:layout_centerHorizontal="true"           
+            android:contentDescription="@string/desc"
+            android:background="@drawable/search_bar" />
+        <ImageView
+            android:id="@+id/searchIcon_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignLeft = "@id/searchBar"
+            android:layout_alignTop = "@+id/searchBar"
+            android:layout_alignBottom = "@+id/searchBar"
+            android:layout_marginTop = "5dp"
+            android:layout_marginBottom = "5dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:src="@drawable/search_icon" />
+        <ImageView
+            android:id="@+id/searchMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft = "@id/searchIcon_rest"
+            android:layout_alignTop = "@+id/searchBar"
+            android:layout_alignBottom = "@+id/searchBar"
+            android:layout_marginTop = "8dp"
+            android:layout_marginBottom = "8dp"
+            android:layout_marginLeft="30dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:src="@drawable/search_text" />
+    </RelativeLayout>
+    
+
+    
+    
+    <RelativeLayout
+        android:id="@+id/hamburgerOptions"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.8"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/dishList"
+            android:adjustViewBounds="true"  
+  			android:maxWidth="150dp"  
+  			android:maxHeight="150dp"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:src="@drawable/hb_dishlist" /> 
+        <ImageView
+            android:id="@+id/history"
+            android:adjustViewBounds="true"  
+            android:maxWidth="150dp"  
+  			android:maxHeight="150dp"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below = "@+id/dishList"
+            android:layout_alignLeft="@id/dishList"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/hb_history" /> 
+         <ImageView
+            android:id="@+id/profile"
+            android:adjustViewBounds="true"  
+            android:maxWidth="150dp"  
+  			android:maxHeight="150dp"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below = "@+id/history"
+            android:layout_alignLeft="@id/dishList"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/hb_profile" /> 
+         <ImageView
+            android:id="@+id/friends"
+            android:adjustViewBounds="true"  
+            android:maxWidth="150dp"  
+  			android:maxHeight="150dp"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below = "@+id/profile"
+            android:layout_alignLeft="@id/dishList"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:src="@drawable/hb_friends" /> 
+        <ImageView
+            android:id="@+id/settings"
+            android:adjustViewBounds="true"  
+            android:maxWidth="150dp"  
+  			android:maxHeight="150dp"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below = "@+id/friends"
+            android:layout_alignLeft="@id/dishList"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:src="@drawable/hb_settings" /> 
+         <ImageView
+            android:id="@+id/logout"
+            android:adjustViewBounds="true"  
+            android:maxWidth="150dp"  
+  			android:maxHeight="150dp"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below = "@+id/settings"
+            android:layout_alignLeft="@id/dishList"
+            android:background="@null"
+            android:contentDescription="@string/desc"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:src="@drawable/hb_logout" /> 
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/backArrow"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.075"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/desc"
+            android:maxHeight="150dp"
+            android:maxWidth="150dp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:src="@drawable/back_arrow" />
+    
+    </RelativeLayout>
+            
+</LinearLayout>
